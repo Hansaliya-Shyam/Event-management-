@@ -23,6 +23,13 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- calander -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -52,7 +59,7 @@
                                 <li><a href="#">Harriet</a></li>
                             </ul>
                         </li>
-                        <li class="active"><a href="./schedule.html">Schedule</a></li>
+                        <li class="active"><a href="./Calender.html">Schedule</a></li>
                         <li><a href="./blog.html">Blog</a></li>
                         <li><a href="./contact.html">Contacts</a></li>
                     </ul>
@@ -641,41 +648,111 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="section-title">
-                        <h2>Location</h2>
-                        <p>Get directions to our event center</p>
-                    </div>
-                    <div class="cs-text">
-                        <div class="ct-address">
-                            <span>Address:</span>
-                            <p>01 Pascale Springs Apt. 339, NY City <br />United State</p>
-                        </div>
-                        <ul>
-                            <li>
-                                <span>Phone:</span>
-                                (+12)-345-67-8910
-                            </li>
-                            <li>
-                                <span>Email:</span>
-                                info.colorlib@gmail.com
-                            </li>
-                        </ul>
-                        <div class="ct-links">
-                            <span>Website:</span>
-                            <p>https://conference.colorlib.com</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="cs-map">
+                    <div class="col-lg-6">
+                        <!-- <div class="cs-map">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52901.38789495531!2d-118.19465514866786!3d34.03523211493029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2cf71ad83ff9f%3A0x518b28657f4543b7!2sEast%20Los%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1579763856144!5m2!1sen!2sbd"
-                            height="400" style="border:0;" allowfullscreen=""></iframe>
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52901.38789495531!2d-118.19465514866786!3d34.03523211493029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2cf71ad83ff9f%3A0x518b28657f4543b7!2sEast%20Los%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1579763856144!5m2!1sen!2sbd"
+                        height="400" style="border:0;" allowfullscreen=""></iframe>
+                        calander -->
+                        <!-- Main wrapper for the calendar application -->
+                        <div class="wrapper">
+                            <div class="container-calendar">
+                                <div id="left">
+                                    <h1>Dynamic Calendar</h1>
+                                    <div id="event-section">
+                                        <h3>Add Event</h3>
+                                        <input type="date" id="eventDate">
+                                        <input type="text" id="eventTitle" placeholder="Event Title">
+                                        <input type="text" id="eventDescription" placeholder="Event Description">
+                                        <button id="addEvent" onclick="addEvent()">
+                                            Add
+                                        </button>
+                                    </div>
+                                    <div id="reminder-section">
+                                        <h3>Reminders</h3>
+                                        <!-- List to display reminders -->
+                                        <ul id="reminderList">
+                                            <li data-event-id="1">
+                                                <strong>Event Title</strong>
+                                                - Event Description on Event Date
+                                                <button class="delete-event" onclick="deleteEvent(1)">
+                                                    Delete
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="right">
+                                    <h3 id="monthAndYear"></h3>
+                                    <div class="button-container-calendar">
+                                        <button id="previous" onclick="previous()">
+                                            ‹
+                                        </button>
+                                        <button id="next" onclick="next()">
+                                            ›
+                                        </button>
+                                    </div>
+                                    <table class="table-calendar" id="calendar" data-lang="en">
+                                        <thead id="thead-month"></thead>
+                                        <!-- Table body for displaying the calendar -->
+                                        <tbody id="calendar-body"></tbody>
+                                    </table>
+                                    <div class="footer-container-calendar">
+                                        <label for="month">Jump To: </label>
+                                        <!-- Dropdowns to select a specific month and year -->
+                                        <select id="month" onchange="jump()">
+                                            <option value=0>Jan</option>
+                                            <option value=1>Feb</option>
+                                            <option value=2>Mar</option>
+                                            <option value=3>Apr</option>
+                                            <option value=4>May</option>
+                                            <option value=5>Jun</option>
+                                            <option value=6>Jul</option>
+                                            <option value=7>Aug</option>
+                                            <option value=8>Sep</option>
+                                            <option value=9>Oct</option>
+                                            <option value=10>Nov</option>
+                                            <option value=11>Dec</option>
+                                        </select>
+                                        <!-- Dropdown to select a specific year -->
+                                        <select id="year" onchange="jump()"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Include the JavaScript file for the calendar functionality -->
+                        <script src="./script.js"></script>
+                        <!-- wertyhdertyukjhfgghyuioiuytrewertyui   -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <div class="section-title">
+        <h2>Location</h2>
+        <p>Get directions to our event center</p>
+    </div>
+    <div class="cs-text">
+        <div class="ct-address">
+            <span>Address:</span>
+            <p>01 Pascale Springs Apt. 339, NY City <br />United State</p>
+        </div>
+        <ul>
+            <li>
+                <span>Phone:</span>
+                (+12)-000-11-0000
+            </li>
+            <li>
+                <span>Email:</span>
+                info.colorlib@gmail.com
+            </li>
+        </ul>
+        <div class="ct-links">
+            <span>Website:</span>
+            <p>https://conference.colorlib.com</p>
+        </div>
+    </div>
+    </div>
     <!-- Contact Section End -->
 
     <!-- Footer Section Begin -->
@@ -726,9 +803,15 @@
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
-                        <div class="copyright-text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                        <div class="copyright-text">
+                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                                template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a
+                                    href="https://colorlib.com" target="_blank">Colorlib</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
                         <div class="ft-social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
@@ -751,6 +834,7 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
