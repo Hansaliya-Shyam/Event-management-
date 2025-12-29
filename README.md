@@ -40,3 +40,31 @@ eventifyphp/
 ├── index.php
 ├── logout.php
 └── README.md
+📌 Future Enhancements
+
+Admin Dashboard Improvements
+
+Email Notifications
+
+Event Booking System
+
+Payment Gateway Integration
+
+API Support
+
+👨‍💻 Author
+
+Hansaliya Shyam
+
+⭐ Support
+
+If you like this project, please ⭐ the repository.
+
+
+If you want, I can also:
+- Add **badges** (PHP, MySQL, GitHub)
+- Make a **short professional README**
+- Create a **setup.sql file**
+- Improve folder naming for production
+
+Just tell me 👍
