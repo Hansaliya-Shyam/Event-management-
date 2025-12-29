@@ -27,21 +27,20 @@ It allows users to register, log in, manage events, and store data securely in a
 ## 🗂️ Project Structure
 eventifyphp/
 ├── assets/
-│ ├── css/
-│ ├── js/
-│ └── images/
+│   ├── css/
+│   ├── js/
+│   └── images/
 ├── config/
-│ └── db.php
+│   └── db.php
 ├── auth/
-│ ├── login.php
-│ └── register.php
+│   ├── login.php
+│   └── register.php
 ├── admin/
-│ ├── dashboard.php
-│ └── manage-events.php
+│   ├── dashboard.php
+│   └── manage-events.php
 ├── index.php
 ├── logout.php
-└── README.md
----
+└── README.md---
 
 ## ⚙️ Database Setup
 
