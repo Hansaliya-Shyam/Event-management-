@@ -6,65 +6,86 @@ It allows users to register, log in, manage events, and store data securely in a
 ---
 
 ## 🚀 Features
-- User Registration & Login
-- Secure Authentication
-- Event Creation & Management
-- MySQL Database Integration
-- Admin & User Flow
-- Responsive UI
-- Easy to Customize
+- User Registration & Login  
+- Secure Authentication  
+- Event Creation & Management  
+- MySQL Database Integration  
+- Admin & User Flow  
+- Responsive UI  
+- Easy to Customize  
 
 ---
 
 ## 🛠️ Tech Stack
-- **Frontend:** HTML, CSS, JavaScript
-- **Backend:** PHP
-- **Database:** MySQL
-- **Server:** XAMPP / WAMP / Localhost
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend:** PHP  
+- **Database:** MySQL  
+- **Server:** XAMPP / WAMP / Localhost  
 
 ---
 
 ## 🗂️ Project Structure
-```text
 eventifyphp/
 ├── assets/
-│   ├── css/
-│   ├── js/
-│   └── images/
+│ ├── css/
+│ ├── js/
+│ └── images/
 ├── config/
-│   └── db.php
+│ └── db.php
 ├── auth/
-│   ├── login.php
-│   └── register.php
+│ ├── login.php
+│ └── register.php
 ├── admin/
+│ ├── dashboard.php
+│ └── manage-events.php
 ├── index.php
 ├── logout.php
 └── README.md
-📌 Future Enhancements
+---
 
-Admin Dashboard Improvements
+## ⚙️ Database Setup
 
-Email Notifications
+Create a database named:
 
-Event Booking System
+Create the following tables:
+- `user_register`
+- `userlogin`
+- `event`
 
-Payment Gateway Integration
+Update database credentials in:
 
-API Support
+---
 
-👨‍💻 Author
+## ▶️ How to Run the Project
 
-Hansaliya Shyam
+1. Install **XAMPP** or **WAMP**.  
+2. Move the project folder to:
+3. Start **Apache** and **MySQL**.  
+4. Open your browser and visit:  
 
-⭐ Support
+---
 
-If you like this project, please ⭐ the repository.
+## 📌 Future Enhancements
+- Admin Dashboard Improvements  
+- Email Notifications  
+- Event Booking System  
+- Payment Gateway Integration  
+- API Support  
 
+---
 
-If you want, I can also:
-- Add **badges** (PHP, MySQL, GitHub)
-- Make a **short professional README**
-- Create a **setup.sql file**
-- Improve folder naming for production
+## 👨‍💻 Author
+**Hansaliya Shyam**
 
-Just tell me 👍
+---
+
+## ⭐ Support
+If you like this project, please ⭐ the repository!
+
+---
+
+> 💡 *If you want, I can also:*
+> - Add **badges** (PHP, MySQL, GitHub)  
+> - Make a **short professional README**  
+> - Create a **setup.sql file**  
+> - Improve folder naming for production  
